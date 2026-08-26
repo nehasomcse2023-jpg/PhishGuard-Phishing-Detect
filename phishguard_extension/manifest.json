@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard Instant Detector",
+  "version": "1.0",
+  "description": "Detects fraud sites in real-time when clicking links.",
+  "permissions": ["webNavigation", "declarativeNetRequest", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
